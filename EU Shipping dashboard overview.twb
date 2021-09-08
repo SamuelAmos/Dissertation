@@ -1,0 +1,2451 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20211.21.0617.1133                               -->
+<workbook original-version='18.1' source-build='2021.1.3 (20211.21.0617.1133)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <style>
+    <style-rule element='gridline'>
+      <format attr='line-visibility' value='off' />
+    </style-rule>
+  </style>
+  <datasources>
+    <datasource caption='EUShipping' inline='true' name='federated.0vjrlz00vp56vs1ed2fu01q94gsf' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='EUShipping' name='textscan.0l46kdl0n096qe18qzrxd1ifapdj'>
+            <connection class='textscan' directory='C:/Users/samos/OneDrive/Documents/Data Science/Dissertation' filename='EUShipping.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0l46kdl0n096qe18qzrxd1ifapdj' name='EUShipping.csv' table='[EUShipping#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
+            <column datatype='integer' name='IMO Number' ordinal='0' />
+            <column datatype='string' name='Name' ordinal='1' />
+            <column datatype='string' name='Ship type' ordinal='2' />
+            <column datatype='datetime' date-parse-format='yyyy' name='Reporting Period' ordinal='3' />
+            <column datatype='string' name='Technical efficiency' ordinal='4' />
+            <column datatype='string' name='Port of Registry' ordinal='5' />
+            <column datatype='string' name='Home Port' ordinal='6' />
+            <column datatype='string' name='Ice Class' ordinal='7' />
+            <column datatype='date' name='DoC issue date' ordinal='8' />
+            <column datatype='date' name='DoC expiry date' ordinal='9' />
+            <column datatype='integer' name='Verifier Number' ordinal='10' />
+            <column datatype='string' name='Verifier Name' ordinal='11' />
+            <column datatype='string' name='Verifier NAB' ordinal='12' />
+            <column datatype='string' name='Verifier Address' ordinal='13' />
+            <column datatype='string' name='Verifier City' ordinal='14' />
+            <column datatype='string' name='Verifier Accreditation number' ordinal='15' />
+            <column datatype='string' name='Verifier Country' ordinal='16' />
+            <column datatype='string' name='A' ordinal='17' />
+            <column datatype='string' name='B' ordinal='18' />
+            <column datatype='string' name='C' ordinal='19' />
+            <column datatype='string' name='D' ordinal='20' />
+            <column datatype='real' name='Total fuel consumption (m tonnes)' ordinal='21' />
+            <column datatype='real' name='Fuel consumptions assigned to On laden (m tonnes)' ordinal='22' />
+            <column datatype='real' name='Total CO₂ emissions (m tonnes)' ordinal='23' />
+            <column datatype='real' name='CO₂ emissions from all voyages between ports under a MS jurisdiction (m tonnes)' ordinal='24' />
+            <column datatype='real' name='CO₂ emissions from all voyages which departed from ports under a MS jurisdiction (m tonnes)' ordinal='25' />
+            <column datatype='real' name='CO₂ emissions from all voyages to ports under a MS jurisdiction (m tonnes)' ordinal='26' />
+            <column datatype='real' name='CO₂ emissions which occurred within ports under a MS jurisdiction at berth (m tonnes)' ordinal='27' />
+            <column datatype='real' name='CO₂ emissions assigned to Passenger transport (m tonnes)' ordinal='28' />
+            <column datatype='real' name='CO₂ emissions assigned to Freight transport (m tonnes)' ordinal='29' />
+            <column datatype='real' name='CO₂ emissions assigned to On laden (m tonnes)' ordinal='30' />
+            <column datatype='real' name='Annual Total time spent at sea (hours)' ordinal='31' />
+            <column datatype='real' name='Annual average Fuel consumption per distance (kg / n mile)' ordinal='32' />
+            <column datatype='string' name='Annual average Fuel consumption per transport work (mass) (g / m tonnes · n miles)' ordinal='33' />
+            <column datatype='real' name='Annual average Fuel consumption per transport work (volume) (g / m³ · n miles)' ordinal='34' />
+            <column datatype='real' name='Annual average Fuel consumption per transport work (dwt) (g / dwt carried · n miles)' ordinal='35' />
+            <column datatype='real' name='Annual average Fuel consumption per transport work (pax) (g / pax · n miles)' ordinal='36' />
+            <column datatype='real' name='Annual average Fuel consumption per transport work (freight) (g / m tonnes · n miles)' ordinal='37' />
+            <column datatype='real' name='Annual average CO₂ emissions per distance (kg CO₂ / n mile)' ordinal='38' />
+            <column datatype='string' name='Annual average CO₂ emissions per transport work (mass) (g CO₂ / m tonnes · n miles)' ordinal='39' />
+            <column datatype='real' name='Annual average CO₂ emissions per transport work (volume) (g CO₂ / m³ · n miles)' ordinal='40' />
+            <column datatype='real' name='Annual average CO₂ emissions per transport work (dwt) (g CO₂ / dwt carried · n miles)' ordinal='41' />
+            <column datatype='real' name='Annual average CO₂ emissions per transport work (pax) (g CO₂ / pax · n miles)' ordinal='42' />
+            <column datatype='real' name='Annual average CO₂ emissions per transport work (freight) (g CO₂ / m tonnes · n miles)' ordinal='43' />
+            <column datatype='real' name='Through ice (n miles)' ordinal='44' />
+            <column datatype='real' name='Total time spent at sea (hours)' ordinal='45' />
+            <column datatype='real' name='Total time spent at sea through ice (hours)' ordinal='46' />
+            <column datatype='string' name='Unnamed: 47' ordinal='47' />
+            <column datatype='string' name='Fuel consumption per distance on laden voyages (kg / n mile)' ordinal='48' />
+            <column datatype='real' name='Fuel consumption per transport work (mass) on laden voyages (g / m tonnes · n miles)' ordinal='49' />
+            <column datatype='string' name='Fuel consumption per transport work (volume) on laden voyages (g / m³ · n miles)' ordinal='50' />
+            <column datatype='real' name='Fuel consumption per transport work (dwt) on laden voyages (g / dwt carried · n miles)' ordinal='51' />
+            <column datatype='real' name='Fuel consumption per transport work (pax) on laden voyages (g / pax · n miles)' ordinal='52' />
+            <column datatype='string' name='Fuel consumption per transport work (freight) on laden voyages (g / m tonnes · n miles)' ordinal='53' />
+            <column datatype='string' name='CO₂ emissions per distance on laden voyages (kg CO₂ / n mile)' ordinal='54' />
+            <column datatype='real' name='CO₂ emissions per transport work (mass) on laden voyages (g CO₂ / m tonnes · n miles)' ordinal='55' />
+            <column datatype='string' name='CO₂ emissions per transport work (volume) on laden voyages (g CO₂ / m³ · n miles)' ordinal='56' />
+            <column datatype='real' name='CO₂ emissions per transport work (dwt) on laden voyages (g CO₂ / dwt carried · n miles)' ordinal='57' />
+            <column datatype='real' name='CO₂ emissions per transport work (pax) on laden voyages (g CO₂ / pax · n miles)' ordinal='58' />
+            <column datatype='string' name='CO₂ emissions per transport work (freight) on laden voyages (g CO₂ / m tonnes · n miles)' ordinal='59' />
+            <column datatype='string' name='Additional information to facilitate the understanding of the reported average operational energy efficiency indicators' ordinal='60' />
+            <column datatype='string' name='Average density of the cargo transported (m tonnes / m³)' ordinal='61' />
+            <column datatype='string' name='MethodA' ordinal='62' />
+            <column datatype='string' name='MethodB' ordinal='63' />
+            <column datatype='string' name='MethodC' ordinal='64' />
+            <column datatype='string' name='MethodD' ordinal='65' />
+            <column datatype='string' name='Method' ordinal='66' />
+            <column datatype='real' name='Technical efficiency (gCO₂/t·nm)' ordinal='67' />
+            <column datatype='real' name='Distance travelled(n miles)' ordinal='68' />
+            <column datatype='real' name='Average speed (n miles/hour)' ordinal='69' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0l46kdl0n096qe18qzrxd1ifapdj' name='EUShipping.csv' table='[EUShipping#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
+            <column datatype='integer' name='IMO Number' ordinal='0' />
+            <column datatype='string' name='Name' ordinal='1' />
+            <column datatype='string' name='Ship type' ordinal='2' />
+            <column datatype='datetime' date-parse-format='yyyy' name='Reporting Period' ordinal='3' />
+            <column datatype='string' name='Technical efficiency' ordinal='4' />
+            <column datatype='string' name='Port of Registry' ordinal='5' />
+            <column datatype='string' name='Home Port' ordinal='6' />
+            <column datatype='string' name='Ice Class' ordinal='7' />
+            <column datatype='date' name='DoC issue date' ordinal='8' />
+            <column datatype='date' name='DoC expiry date' ordinal='9' />
+            <column datatype='integer' name='Verifier Number' ordinal='10' />
+            <column datatype='string' name='Verifier Name' ordinal='11' />
+            <column datatype='string' name='Verifier NAB' ordinal='12' />
+            <column datatype='string' name='Verifier Address' ordinal='13' />
+            <column datatype='string' name='Verifier City' ordinal='14' />
+            <column datatype='string' name='Verifier Accreditation number' ordinal='15' />
+            <column datatype='string' name='Verifier Country' ordinal='16' />
+            <column datatype='string' name='A' ordinal='17' />
+            <column datatype='string' name='B' ordinal='18' />
+            <column datatype='string' name='C' ordinal='19' />
+            <column datatype='string' name='D' ordinal='20' />
+            <column datatype='real' name='Total fuel consumption (m tonnes)' ordinal='21' />
+            <column datatype='real' name='Fuel consumptions assigned to On laden (m tonnes)' ordinal='22' />
+            <column datatype='real' name='Total CO₂ emissions (m tonnes)' ordinal='23' />
+            <column datatype='real' name='CO₂ emissions from all voyages between ports under a MS jurisdiction (m tonnes)' ordinal='24' />
+            <column datatype='real' name='CO₂ emissions from all voyages which departed from ports under a MS jurisdiction (m tonnes)' ordinal='25' />
+            <column datatype='real' name='CO₂ emissions from all voyages to ports under a MS jurisdiction (m tonnes)' ordinal='26' />
+            <column datatype='real' name='CO₂ emissions which occurred within ports under a MS jurisdiction at berth (m tonnes)' ordinal='27' />
+            <column datatype='real' name='CO₂ emissions assigned to Passenger transport (m tonnes)' ordinal='28' />
+            <column datatype='real' name='CO₂ emissions assigned to Freight transport (m tonnes)' ordinal='29' />
+            <column datatype='real' name='CO₂ emissions assigned to On laden (m tonnes)' ordinal='30' />
+            <column datatype='real' name='Annual Total time spent at sea (hours)' ordinal='31' />
+            <column datatype='real' name='Annual average Fuel consumption per distance (kg / n mile)' ordinal='32' />
+            <column datatype='string' name='Annual average Fuel consumption per transport work (mass) (g / m tonnes · n miles)' ordinal='33' />
+            <column datatype='real' name='Annual average Fuel consumption per transport work (volume) (g / m³ · n miles)' ordinal='34' />
+            <column datatype='real' name='Annual average Fuel consumption per transport work (dwt) (g / dwt carried · n miles)' ordinal='35' />
+            <column datatype='real' name='Annual average Fuel consumption per transport work (pax) (g / pax · n miles)' ordinal='36' />
+            <column datatype='real' name='Annual average Fuel consumption per transport work (freight) (g / m tonnes · n miles)' ordinal='37' />
+            <column datatype='real' name='Annual average CO₂ emissions per distance (kg CO₂ / n mile)' ordinal='38' />
+            <column datatype='string' name='Annual average CO₂ emissions per transport work (mass) (g CO₂ / m tonnes · n miles)' ordinal='39' />
+            <column datatype='real' name='Annual average CO₂ emissions per transport work (volume) (g CO₂ / m³ · n miles)' ordinal='40' />
+            <column datatype='real' name='Annual average CO₂ emissions per transport work (dwt) (g CO₂ / dwt carried · n miles)' ordinal='41' />
+            <column datatype='real' name='Annual average CO₂ emissions per transport work (pax) (g CO₂ / pax · n miles)' ordinal='42' />
+            <column datatype='real' name='Annual average CO₂ emissions per transport work (freight) (g CO₂ / m tonnes · n miles)' ordinal='43' />
+            <column datatype='real' name='Through ice (n miles)' ordinal='44' />
+            <column datatype='real' name='Total time spent at sea (hours)' ordinal='45' />
+            <column datatype='real' name='Total time spent at sea through ice (hours)' ordinal='46' />
+            <column datatype='string' name='Unnamed: 47' ordinal='47' />
+            <column datatype='string' name='Fuel consumption per distance on laden voyages (kg / n mile)' ordinal='48' />
+            <column datatype='real' name='Fuel consumption per transport work (mass) on laden voyages (g / m tonnes · n miles)' ordinal='49' />
+            <column datatype='string' name='Fuel consumption per transport work (volume) on laden voyages (g / m³ · n miles)' ordinal='50' />
+            <column datatype='real' name='Fuel consumption per transport work (dwt) on laden voyages (g / dwt carried · n miles)' ordinal='51' />
+            <column datatype='real' name='Fuel consumption per transport work (pax) on laden voyages (g / pax · n miles)' ordinal='52' />
+            <column datatype='string' name='Fuel consumption per transport work (freight) on laden voyages (g / m tonnes · n miles)' ordinal='53' />
+            <column datatype='string' name='CO₂ emissions per distance on laden voyages (kg CO₂ / n mile)' ordinal='54' />
+            <column datatype='real' name='CO₂ emissions per transport work (mass) on laden voyages (g CO₂ / m tonnes · n miles)' ordinal='55' />
+            <column datatype='string' name='CO₂ emissions per transport work (volume) on laden voyages (g CO₂ / m³ · n miles)' ordinal='56' />
+            <column datatype='real' name='CO₂ emissions per transport work (dwt) on laden voyages (g CO₂ / dwt carried · n miles)' ordinal='57' />
+            <column datatype='real' name='CO₂ emissions per transport work (pax) on laden voyages (g CO₂ / pax · n miles)' ordinal='58' />
+            <column datatype='string' name='CO₂ emissions per transport work (freight) on laden voyages (g CO₂ / m tonnes · n miles)' ordinal='59' />
+            <column datatype='string' name='Additional information to facilitate the understanding of the reported average operational energy efficiency indicators' ordinal='60' />
+            <column datatype='string' name='Average density of the cargo transported (m tonnes / m³)' ordinal='61' />
+            <column datatype='string' name='MethodA' ordinal='62' />
+            <column datatype='string' name='MethodB' ordinal='63' />
+            <column datatype='string' name='MethodC' ordinal='64' />
+            <column datatype='string' name='MethodD' ordinal='65' />
+            <column datatype='string' name='Method' ordinal='66' />
+            <column datatype='real' name='Technical efficiency (gCO₂/t·nm)' ordinal='67' />
+            <column datatype='real' name='Distance travelled(n miles)' ordinal='68' />
+            <column datatype='real' name='Average speed (n miles/hour)' ordinal='69' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[EUShipping.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;£&quot;</attribute>
+              <attribute datatype='string' name='debit-close-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='debit-open-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>IMO Number</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[IMO Number]</local-name>
+            <parent-name>[EUShipping.csv]</parent-name>
+            <remote-alias>IMO Number</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[EUShipping.csv_4AF4965D7F2B4B6ABACB7FE4CD6B0CFD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Name]</local-name>
+            <parent-name>[EUShipping.csv]</parent-name>
+            <remote-alias>Name</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[EUShipping.csv_4AF4965D7F2B4B6ABACB7FE4CD6B0CFD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Ship type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Ship type]</local-name>
+            <parent-name>[EUShipping.csv]</parent-name>
+            <remote-alias>Ship type</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[EUShipping.csv_4AF4965D7F2B4B6ABACB7FE4CD6B0CFD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Reporting Period</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Reporting Period]</local-name>
+            <parent-name>[EUShipping.csv]</parent-name>
+            <remote-alias>Reporting Period</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[EUShipping.csv_4AF4965D7F2B4B6ABACB7FE4CD6B0CFD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Technical efficiency</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Technical efficiency]</local-name>
+            <parent-name>[EUShipping.csv]</parent-name>
+            <remote-alias>Technical efficiency</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[EUShipping.csv_4AF4965D7F2B4B6ABACB7FE4CD6B0CFD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Port of Registry</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Port of Registry]</local-name>
+            <parent-name>[EUShipping.csv]</parent-name>
+            <remote-alias>Port of Registry</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[EUShipping.csv_4AF4965D7F2B4B6ABACB7FE4CD6B0CFD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Home Port</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Home Port]</local-name>
+            <parent-name>[EUShipping.csv]</parent-name>
+            <remote-alias>Home Port</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[EUShipping.csv_4AF4965D7F2B4B6ABACB7FE4CD6B0CFD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Ice Class</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Ice Class]</local-name>
+            <parent-name>[EUShipping.csv]</parent-name>
+            <remote-alias>Ice Class</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[EUShipping.csv_4AF4965D7F2B4B6ABACB7FE4CD6B0CFD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DoC issue date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[DoC issue date]</local-name>
+            <parent-name>[EUShipping.csv]</parent-name>
+            <remote-alias>DoC issue date</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[EUShipping.csv_4AF4965D7F2B4B6ABACB7FE4CD6B0CFD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DoC expiry date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[DoC expiry date]</local-name>
+            <parent-name>[EUShipping.csv]</parent-name>
+            <remote-alias>DoC expiry date</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[EUShipping.csv_4AF4965D7F2B4B6ABACB7FE4CD6B0CFD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Verifier Number</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Verifier Number]</local-name>
+            <parent-name>[EUShipping.csv]</parent-name>
+            <remote-alias>Verifier Number</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[EUShipping.csv_4AF4965D7F2B4B6ABACB7FE4CD6B0CFD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Verifier Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Verifier Name]</local-name>
+            <parent-name>[EUShipping.csv]</parent-name>
+            <remote-alias>Verifier Name</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[EUShipping.csv_4AF4965D7F2B4B6ABACB7FE4CD6B0CFD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Verifier NAB</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Verifier NAB]</local-name>
+            <parent-name>[EUShipping.csv]</parent-name>
+            <remote-alias>Verifier NAB</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[EUShipping.csv_4AF4965D7F2B4B6ABACB7FE4CD6B0CFD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Verifier Address</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Verifier Address]</local-name>
+            <parent-name>[EUShipping.csv]</parent-name>
+            <remote-alias>Verifier Address</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[EUShipping.csv_4AF4965D7F2B4B6ABACB7FE4CD6B0CFD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Verifier City</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Verifier City]</local-name>
+            <parent-name>[EUShipping.csv]</parent-name>
+            <remote-alias>Verifier City</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[EUShipping.csv_4AF4965D7F2B4B6ABACB7FE4CD6B0CFD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Verifier Accreditation number</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Verifier Accreditation number]</local-name>
+            <parent-name>[EUShipping.csv]</parent-name>
+            <remote-alias>Verifier Accreditation number</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[EUShipping.csv_4AF4965D7F2B4B6ABACB7FE4CD6B0CFD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Verifier Country</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Verifier Country]</local-name>
+            <parent-name>[EUShipping.csv]</parent-name>
+            <remote-alias>Verifier Country</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[EUShipping.csv_4AF4965D7F2B4B6ABACB7FE4CD6B0CFD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>A</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[A]</local-name>
+            <parent-name>[EUShipping.csv]</parent-name>
+            <remote-alias>A</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[EUShipping.csv_4AF4965D7F2B4B6ABACB7FE4CD6B0CFD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>B</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[B]</local-name>
+            <parent-name>[EUShipping.csv]</parent-name>
+            <remote-alias>B</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[EUShipping.csv_4AF4965D7F2B4B6ABACB7FE4CD6B0CFD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>C</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[C]</local-name>
+            <parent-name>[EUShipping.csv]</parent-name>
+            <remote-alias>C</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[EUShipping.csv_4AF4965D7F2B4B6ABACB7FE4CD6B0CFD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>D</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[D]</local-name>
+            <parent-name>[EUShipping.csv]</parent-name>
+            <remote-alias>D</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[EUShipping.csv_4AF4965D7F2B4B6ABACB7FE4CD6B0CFD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total fuel consumption (m tonnes)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Total fuel consumption (m tonnes)]</local-name>
+            <parent-name>[EUShipping.csv]</parent-name>
+            <remote-alias>Total fuel consumption (m tonnes)</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[EUShipping.csv_4AF4965D7F2B4B6ABACB7FE4CD6B0CFD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Fuel consumptions assigned to On laden (m tonnes)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Fuel consumptions assigned to On laden (m tonnes)]</local-name>
+            <parent-name>[EUShipping.csv]</parent-name>
+            <remote-alias>Fuel consumptions assigned to On laden (m tonnes)</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[EUShipping.csv_4AF4965D7F2B4B6ABACB7FE4CD6B0CFD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total CO₂ emissions (m tonnes)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Total CO₂ emissions (m tonnes)]</local-name>
+            <parent-name>[EUShipping.csv]</parent-name>
+            <remote-alias>Total CO₂ emissions (m tonnes)</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[EUShipping.csv_4AF4965D7F2B4B6ABACB7FE4CD6B0CFD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CO₂ emissions from all voyages between ports under a MS jurisdiction (m tonnes)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[CO₂ emissions from all voyages between ports under a MS jurisdiction (m tonnes)]</local-name>
+            <parent-name>[EUShipping.csv]</parent-name>
+            <remote-alias>CO₂ emissions from all voyages between ports under a MS jurisdiction (m tonnes)</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[EUShipping.csv_4AF4965D7F2B4B6ABACB7FE4CD6B0CFD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CO₂ emissions from all voyages which departed from ports under a MS jurisdiction (m tonnes)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[CO₂ emissions from all voyages which departed from ports under a MS jurisdiction (m tonnes)]</local-name>
+            <parent-name>[EUShipping.csv]</parent-name>
+            <remote-alias>CO₂ emissions from all voyages which departed from ports under a MS jurisdiction (m tonnes)</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[EUShipping.csv_4AF4965D7F2B4B6ABACB7FE4CD6B0CFD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CO₂ emissions from all voyages to ports under a MS jurisdiction (m tonnes)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[CO₂ emissions from all voyages to ports under a MS jurisdiction (m tonnes)]</local-name>
+            <parent-name>[EUShipping.csv]</parent-name>
+            <remote-alias>CO₂ emissions from all voyages to ports under a MS jurisdiction (m tonnes)</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[EUShipping.csv_4AF4965D7F2B4B6ABACB7FE4CD6B0CFD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CO₂ emissions which occurred within ports under a MS jurisdiction at berth (m tonnes)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[CO₂ emissions which occurred within ports under a MS jurisdiction at berth (m tonnes)]</local-name>
+            <parent-name>[EUShipping.csv]</parent-name>
+            <remote-alias>CO₂ emissions which occurred within ports under a MS jurisdiction at berth (m tonnes)</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[EUShipping.csv_4AF4965D7F2B4B6ABACB7FE4CD6B0CFD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CO₂ emissions assigned to Passenger transport (m tonnes)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[CO₂ emissions assigned to Passenger transport (m tonnes)]</local-name>
+            <parent-name>[EUShipping.csv]</parent-name>
+            <remote-alias>CO₂ emissions assigned to Passenger transport (m tonnes)</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[EUShipping.csv_4AF4965D7F2B4B6ABACB7FE4CD6B0CFD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CO₂ emissions assigned to Freight transport (m tonnes)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[CO₂ emissions assigned to Freight transport (m tonnes)]</local-name>
+            <parent-name>[EUShipping.csv]</parent-name>
+            <remote-alias>CO₂ emissions assigned to Freight transport (m tonnes)</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[EUShipping.csv_4AF4965D7F2B4B6ABACB7FE4CD6B0CFD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CO₂ emissions assigned to On laden (m tonnes)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[CO₂ emissions assigned to On laden (m tonnes)]</local-name>
+            <parent-name>[EUShipping.csv]</parent-name>
+            <remote-alias>CO₂ emissions assigned to On laden (m tonnes)</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[EUShipping.csv_4AF4965D7F2B4B6ABACB7FE4CD6B0CFD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Annual Total time spent at sea (hours)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Annual Total time spent at sea (hours)]</local-name>
+            <parent-name>[EUShipping.csv]</parent-name>
+            <remote-alias>Annual Total time spent at sea (hours)</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[EUShipping.csv_4AF4965D7F2B4B6ABACB7FE4CD6B0CFD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Annual average Fuel consumption per distance (kg / n mile)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Annual average Fuel consumption per distance (kg / n mile)]</local-name>
+            <parent-name>[EUShipping.csv]</parent-name>
+            <remote-alias>Annual average Fuel consumption per distance (kg / n mile)</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[EUShipping.csv_4AF4965D7F2B4B6ABACB7FE4CD6B0CFD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Annual average Fuel consumption per transport work (mass) (g / m tonnes · n miles)</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Annual average Fuel consumption per transport work (mass) (g / m tonnes · n miles)]</local-name>
+            <parent-name>[EUShipping.csv]</parent-name>
+            <remote-alias>Annual average Fuel consumption per transport work (mass) (g / m tonnes · n miles)</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[EUShipping.csv_4AF4965D7F2B4B6ABACB7FE4CD6B0CFD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Annual average Fuel consumption per transport work (volume) (g / m³ · n miles)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Annual average Fuel consumption per transport work (volume) (g / m³ · n miles)]</local-name>
+            <parent-name>[EUShipping.csv]</parent-name>
+            <remote-alias>Annual average Fuel consumption per transport work (volume) (g / m³ · n miles)</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[EUShipping.csv_4AF4965D7F2B4B6ABACB7FE4CD6B0CFD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Annual average Fuel consumption per transport work (dwt) (g / dwt carried · n miles)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Annual average Fuel consumption per transport work (dwt) (g / dwt carried · n miles)]</local-name>
+            <parent-name>[EUShipping.csv]</parent-name>
+            <remote-alias>Annual average Fuel consumption per transport work (dwt) (g / dwt carried · n miles)</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[EUShipping.csv_4AF4965D7F2B4B6ABACB7FE4CD6B0CFD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Annual average Fuel consumption per transport work (pax) (g / pax · n miles)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Annual average Fuel consumption per transport work (pax) (g / pax · n miles)]</local-name>
+            <parent-name>[EUShipping.csv]</parent-name>
+            <remote-alias>Annual average Fuel consumption per transport work (pax) (g / pax · n miles)</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[EUShipping.csv_4AF4965D7F2B4B6ABACB7FE4CD6B0CFD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Annual average Fuel consumption per transport work (freight) (g / m tonnes · n miles)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Annual average Fuel consumption per transport work (freight) (g / m tonnes · n miles)]</local-name>
+            <parent-name>[EUShipping.csv]</parent-name>
+            <remote-alias>Annual average Fuel consumption per transport work (freight) (g / m tonnes · n miles)</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[EUShipping.csv_4AF4965D7F2B4B6ABACB7FE4CD6B0CFD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Annual average CO₂ emissions per distance (kg CO₂ / n mile)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Annual average CO₂ emissions per distance (kg CO₂ / n mile)]</local-name>
+            <parent-name>[EUShipping.csv]</parent-name>
+            <remote-alias>Annual average CO₂ emissions per distance (kg CO₂ / n mile)</remote-alias>
+            <ordinal>38</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[EUShipping.csv_4AF4965D7F2B4B6ABACB7FE4CD6B0CFD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Annual average CO₂ emissions per transport work (mass) (g CO₂ / m tonnes · n miles)</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Annual average CO₂ emissions per transport work (mass) (g CO₂ / m tonnes · n miles)]</local-name>
+            <parent-name>[EUShipping.csv]</parent-name>
+            <remote-alias>Annual average CO₂ emissions per transport work (mass) (g CO₂ / m tonnes · n miles)</remote-alias>
+            <ordinal>39</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[EUShipping.csv_4AF4965D7F2B4B6ABACB7FE4CD6B0CFD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Annual average CO₂ emissions per transport work (volume) (g CO₂ / m³ · n miles)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Annual average CO₂ emissions per transport work (volume) (g CO₂ / m³ · n miles)]</local-name>
+            <parent-name>[EUShipping.csv]</parent-name>
+            <remote-alias>Annual average CO₂ emissions per transport work (volume) (g CO₂ / m³ · n miles)</remote-alias>
+            <ordinal>40</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[EUShipping.csv_4AF4965D7F2B4B6ABACB7FE4CD6B0CFD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Annual average CO₂ emissions per transport work (dwt) (g CO₂ / dwt carried · n miles)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Annual average CO₂ emissions per transport work (dwt) (g CO₂ / dwt carried · n miles)]</local-name>
+            <parent-name>[EUShipping.csv]</parent-name>
+            <remote-alias>Annual average CO₂ emissions per transport work (dwt) (g CO₂ / dwt carried · n miles)</remote-alias>
+            <ordinal>41</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[EUShipping.csv_4AF4965D7F2B4B6ABACB7FE4CD6B0CFD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Annual average CO₂ emissions per transport work (pax) (g CO₂ / pax · n miles)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Annual average CO₂ emissions per transport work (pax) (g CO₂ / pax · n miles)]</local-name>
+            <parent-name>[EUShipping.csv]</parent-name>
+            <remote-alias>Annual average CO₂ emissions per transport work (pax) (g CO₂ / pax · n miles)</remote-alias>
+            <ordinal>42</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[EUShipping.csv_4AF4965D7F2B4B6ABACB7FE4CD6B0CFD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Annual average CO₂ emissions per transport work (freight) (g CO₂ / m tonnes · n miles)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Annual average CO₂ emissions per transport work (freight) (g CO₂ / m tonnes · n miles)]</local-name>
+            <parent-name>[EUShipping.csv]</parent-name>
+            <remote-alias>Annual average CO₂ emissions per transport work (freight) (g CO₂ / m tonnes · n miles)</remote-alias>
+            <ordinal>43</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[EUShipping.csv_4AF4965D7F2B4B6ABACB7FE4CD6B0CFD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Through ice (n miles)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Through ice (n miles)]</local-name>
+            <parent-name>[EUShipping.csv]</parent-name>
+            <remote-alias>Through ice (n miles)</remote-alias>
+            <ordinal>44</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[EUShipping.csv_4AF4965D7F2B4B6ABACB7FE4CD6B0CFD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total time spent at sea (hours)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Total time spent at sea (hours)]</local-name>
+            <parent-name>[EUShipping.csv]</parent-name>
+            <remote-alias>Total time spent at sea (hours)</remote-alias>
+            <ordinal>45</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[EUShipping.csv_4AF4965D7F2B4B6ABACB7FE4CD6B0CFD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total time spent at sea through ice (hours)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Total time spent at sea through ice (hours)]</local-name>
+            <parent-name>[EUShipping.csv]</parent-name>
+            <remote-alias>Total time spent at sea through ice (hours)</remote-alias>
+            <ordinal>46</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[EUShipping.csv_4AF4965D7F2B4B6ABACB7FE4CD6B0CFD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Unnamed: 47</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Unnamed: 47]</local-name>
+            <parent-name>[EUShipping.csv]</parent-name>
+            <remote-alias>Unnamed: 47</remote-alias>
+            <ordinal>47</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[EUShipping.csv_4AF4965D7F2B4B6ABACB7FE4CD6B0CFD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Fuel consumption per distance on laden voyages (kg / n mile)</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Fuel consumption per distance on laden voyages (kg / n mile)]</local-name>
+            <parent-name>[EUShipping.csv]</parent-name>
+            <remote-alias>Fuel consumption per distance on laden voyages (kg / n mile)</remote-alias>
+            <ordinal>48</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[EUShipping.csv_4AF4965D7F2B4B6ABACB7FE4CD6B0CFD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Fuel consumption per transport work (mass) on laden voyages (g / m tonnes · n miles)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Fuel consumption per transport work (mass) on laden voyages (g / m tonnes · n miles)]</local-name>
+            <parent-name>[EUShipping.csv]</parent-name>
+            <remote-alias>Fuel consumption per transport work (mass) on laden voyages (g / m tonnes · n miles)</remote-alias>
+            <ordinal>49</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[EUShipping.csv_4AF4965D7F2B4B6ABACB7FE4CD6B0CFD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Fuel consumption per transport work (volume) on laden voyages (g / m³ · n miles)</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Fuel consumption per transport work (volume) on laden voyages (g / m³ · n miles)]</local-name>
+            <parent-name>[EUShipping.csv]</parent-name>
+            <remote-alias>Fuel consumption per transport work (volume) on laden voyages (g / m³ · n miles)</remote-alias>
+            <ordinal>50</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[EUShipping.csv_4AF4965D7F2B4B6ABACB7FE4CD6B0CFD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Fuel consumption per transport work (dwt) on laden voyages (g / dwt carried · n miles)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Fuel consumption per transport work (dwt) on laden voyages (g / dwt carried · n miles)]</local-name>
+            <parent-name>[EUShipping.csv]</parent-name>
+            <remote-alias>Fuel consumption per transport work (dwt) on laden voyages (g / dwt carried · n miles)</remote-alias>
+            <ordinal>51</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[EUShipping.csv_4AF4965D7F2B4B6ABACB7FE4CD6B0CFD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Fuel consumption per transport work (pax) on laden voyages (g / pax · n miles)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Fuel consumption per transport work (pax) on laden voyages (g / pax · n miles)]</local-name>
+            <parent-name>[EUShipping.csv]</parent-name>
+            <remote-alias>Fuel consumption per transport work (pax) on laden voyages (g / pax · n miles)</remote-alias>
+            <ordinal>52</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[EUShipping.csv_4AF4965D7F2B4B6ABACB7FE4CD6B0CFD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Fuel consumption per transport work (freight) on laden voyages (g / m tonnes · n miles)</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Fuel consumption per transport work (freight) on laden voyages (g / m tonnes · n miles)]</local-name>
+            <parent-name>[EUShipping.csv]</parent-name>
+            <remote-alias>Fuel consumption per transport work (freight) on laden voyages (g / m tonnes · n miles)</remote-alias>
+            <ordinal>53</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[EUShipping.csv_4AF4965D7F2B4B6ABACB7FE4CD6B0CFD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CO₂ emissions per distance on laden voyages (kg CO₂ / n mile)</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CO₂ emissions per distance on laden voyages (kg CO₂ / n mile)]</local-name>
+            <parent-name>[EUShipping.csv]</parent-name>
+            <remote-alias>CO₂ emissions per distance on laden voyages (kg CO₂ / n mile)</remote-alias>
+            <ordinal>54</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[EUShipping.csv_4AF4965D7F2B4B6ABACB7FE4CD6B0CFD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CO₂ emissions per transport work (mass) on laden voyages (g CO₂ / m tonnes · n miles)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[CO₂ emissions per transport work (mass) on laden voyages (g CO₂ / m tonnes · n miles)]</local-name>
+            <parent-name>[EUShipping.csv]</parent-name>
+            <remote-alias>CO₂ emissions per transport work (mass) on laden voyages (g CO₂ / m tonnes · n miles)</remote-alias>
+            <ordinal>55</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[EUShipping.csv_4AF4965D7F2B4B6ABACB7FE4CD6B0CFD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CO₂ emissions per transport work (volume) on laden voyages (g CO₂ / m³ · n miles)</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CO₂ emissions per transport work (volume) on laden voyages (g CO₂ / m³ · n miles)]</local-name>
+            <parent-name>[EUShipping.csv]</parent-name>
+            <remote-alias>CO₂ emissions per transport work (volume) on laden voyages (g CO₂ / m³ · n miles)</remote-alias>
+            <ordinal>56</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[EUShipping.csv_4AF4965D7F2B4B6ABACB7FE4CD6B0CFD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CO₂ emissions per transport work (dwt) on laden voyages (g CO₂ / dwt carried · n miles)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[CO₂ emissions per transport work (dwt) on laden voyages (g CO₂ / dwt carried · n miles)]</local-name>
+            <parent-name>[EUShipping.csv]</parent-name>
+            <remote-alias>CO₂ emissions per transport work (dwt) on laden voyages (g CO₂ / dwt carried · n miles)</remote-alias>
+            <ordinal>57</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[EUShipping.csv_4AF4965D7F2B4B6ABACB7FE4CD6B0CFD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CO₂ emissions per transport work (pax) on laden voyages (g CO₂ / pax · n miles)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[CO₂ emissions per transport work (pax) on laden voyages (g CO₂ / pax · n miles)]</local-name>
+            <parent-name>[EUShipping.csv]</parent-name>
+            <remote-alias>CO₂ emissions per transport work (pax) on laden voyages (g CO₂ / pax · n miles)</remote-alias>
+            <ordinal>58</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[EUShipping.csv_4AF4965D7F2B4B6ABACB7FE4CD6B0CFD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CO₂ emissions per transport work (freight) on laden voyages (g CO₂ / m tonnes · n miles)</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CO₂ emissions per transport work (freight) on laden voyages (g CO₂ / m tonnes · n miles)]</local-name>
+            <parent-name>[EUShipping.csv]</parent-name>
+            <remote-alias>CO₂ emissions per transport work (freight) on laden voyages (g CO₂ / m tonnes · n miles)</remote-alias>
+            <ordinal>59</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[EUShipping.csv_4AF4965D7F2B4B6ABACB7FE4CD6B0CFD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Additional information to facilitate the understanding of the reported average operational energy efficiency indicators</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Additional information to facilitate the understanding of the reported average operational energy efficiency indicators]</local-name>
+            <parent-name>[EUShipping.csv]</parent-name>
+            <remote-alias>Additional information to facilitate the understanding of the reported average operational energy efficiency indicators</remote-alias>
+            <ordinal>60</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[EUShipping.csv_4AF4965D7F2B4B6ABACB7FE4CD6B0CFD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Average density of the cargo transported (m tonnes / m³)</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Average density of the cargo transported (m tonnes / m³)]</local-name>
+            <parent-name>[EUShipping.csv]</parent-name>
+            <remote-alias>Average density of the cargo transported (m tonnes / m³)</remote-alias>
+            <ordinal>61</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[EUShipping.csv_4AF4965D7F2B4B6ABACB7FE4CD6B0CFD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MethodA</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[MethodA]</local-name>
+            <parent-name>[EUShipping.csv]</parent-name>
+            <remote-alias>MethodA</remote-alias>
+            <ordinal>62</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[EUShipping.csv_4AF4965D7F2B4B6ABACB7FE4CD6B0CFD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MethodB</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[MethodB]</local-name>
+            <parent-name>[EUShipping.csv]</parent-name>
+            <remote-alias>MethodB</remote-alias>
+            <ordinal>63</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[EUShipping.csv_4AF4965D7F2B4B6ABACB7FE4CD6B0CFD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MethodC</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[MethodC]</local-name>
+            <parent-name>[EUShipping.csv]</parent-name>
+            <remote-alias>MethodC</remote-alias>
+            <ordinal>64</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[EUShipping.csv_4AF4965D7F2B4B6ABACB7FE4CD6B0CFD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MethodD</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[MethodD]</local-name>
+            <parent-name>[EUShipping.csv]</parent-name>
+            <remote-alias>MethodD</remote-alias>
+            <ordinal>65</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[EUShipping.csv_4AF4965D7F2B4B6ABACB7FE4CD6B0CFD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Method</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Method]</local-name>
+            <parent-name>[EUShipping.csv]</parent-name>
+            <remote-alias>Method</remote-alias>
+            <ordinal>66</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[EUShipping.csv_4AF4965D7F2B4B6ABACB7FE4CD6B0CFD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Technical efficiency (gCO₂/t·nm)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Technical efficiency (gCO₂/t·nm)]</local-name>
+            <parent-name>[EUShipping.csv]</parent-name>
+            <remote-alias>Technical efficiency (gCO₂/t·nm)</remote-alias>
+            <ordinal>67</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[EUShipping.csv_4AF4965D7F2B4B6ABACB7FE4CD6B0CFD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Distance travelled(n miles)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Distance travelled(n miles)]</local-name>
+            <parent-name>[EUShipping.csv]</parent-name>
+            <remote-alias>Distance travelled(n miles)</remote-alias>
+            <ordinal>68</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[EUShipping.csv_4AF4965D7F2B4B6ABACB7FE4CD6B0CFD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Average speed (n miles/hour)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Average speed (n miles/hour)]</local-name>
+            <parent-name>[EUShipping.csv]</parent-name>
+            <remote-alias>Average speed (n miles/hour)</remote-alias>
+            <ordinal>69</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[EUShipping.csv_4AF4965D7F2B4B6ABACB7FE4CD6B0CFD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[:Measure Names]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='&quot;[federated.0vjrlz00vp56vs1ed2fu01q94gsf].[ctd:Name:qk]&quot;' value='#Ships' />
+          <alias key='&quot;[federated.0vjrlz00vp56vs1ed2fu01q94gsf].[sum:CO₂ emissions from all voyages between ports under a MS jurisdiction (m tonnes):qk]&quot;' value='Between EU ports' />
+          <alias key='&quot;[federated.0vjrlz00vp56vs1ed2fu01q94gsf].[sum:CO₂ emissions from all voyages to ports under a MS jurisdiction (m tonnes):qk]&quot;' value='International to EU ports' />
+          <alias key='&quot;[federated.0vjrlz00vp56vs1ed2fu01q94gsf].[sum:CO₂ emissions from all voyages which departed from ports under a MS jurisdiction (m tonnes):qk]&quot;' value='From EU to international ports' />
+          <alias key='&quot;[federated.0vjrlz00vp56vs1ed2fu01q94gsf].[sum:CO₂ emissions which occurred within ports under a MS jurisdiction at berth (m tonnes):qk]&quot;' value='Within EU ports' />
+          <alias key='&quot;[federated.0vjrlz00vp56vs1ed2fu01q94gsf].[sum:Distance travelled(n miles):qk]&quot;' value='Distance travelled(nautical miles)' />
+          <alias key='&quot;[federated.0vjrlz00vp56vs1ed2fu01q94gsf].[sum:Total CO₂ emissions (m tonnes):qk]&quot;' value='Total CO₂ emissions (metric tonnes)' />
+          <alias key='&quot;[federated.0vjrlz00vp56vs1ed2fu01q94gsf].[sum:Total fuel consumption (m tonnes):qk]&quot;' value='Total fuel consumption (metric tonnes)' />
+        </aliases>
+      </column>
+      <column datatype='real' name='[CO₂ emissions from all voyages between ports under a MS jurisdiction (m tonnes)]' role='measure' type='quantitative' />
+      <column datatype='real' name='[CO₂ emissions from all voyages to ports under a MS jurisdiction (m tonnes)]' role='measure' type='quantitative' />
+      <column datatype='real' name='[CO₂ emissions from all voyages which departed from ports under a MS jurisdiction (m tonnes)]' role='measure' type='quantitative' />
+      <column datatype='real' name='[CO₂ emissions which occurred within ports under a MS jurisdiction at berth (m tonnes)]' role='measure' type='quantitative' />
+      <column datatype='real' name='[Distance travelled(n miles)]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[IMO Number]' role='dimension' type='ordinal' />
+      <column caption='Method A' datatype='string' name='[MethodA]' role='dimension' type='nominal' />
+      <column caption='Method B' datatype='string' name='[MethodB]' role='dimension' type='nominal' />
+      <column caption='Method C' datatype='string' name='[MethodC]' role='dimension' type='nominal' />
+      <column caption='Method D' datatype='string' name='[MethodD]' role='dimension' type='nominal' />
+      <column datatype='string' name='[Name]' role='dimension' type='nominal' />
+      <column datatype='datetime' name='[Reporting Period]' role='dimension' type='ordinal' />
+      <column caption='Total CO₂ emissions (metric tonnes)' datatype='real' name='[Total CO₂ emissions (m tonnes)]' role='measure' type='quantitative' />
+      <column datatype='real' name='[Total fuel consumption (m tonnes)]' role='measure' type='quantitative' />
+      <column datatype='string' name='[Verifier City]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column datatype='string' name='[Verifier Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column datatype='integer' name='[Verifier Number]' role='dimension' type='ordinal' />
+      <_.fcp.ObjectModelTableType.true...column caption='EUShipping.csv' datatype='table' name='[__tableau_internal_object_id__].[EUShipping.csv_4AF4965D7F2B4B6ABACB7FE4CD6B0CFD]' role='measure' type='quantitative' />
+      <column-instance column='[Name]' derivation='CountD' name='[ctd:Name:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[CO₂ emissions from all voyages between ports under a MS jurisdiction (m tonnes)]' derivation='Sum' name='[sum:CO₂ emissions from all voyages between ports under a MS jurisdiction (m tonnes):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[CO₂ emissions from all voyages to ports under a MS jurisdiction (m tonnes)]' derivation='Sum' name='[sum:CO₂ emissions from all voyages to ports under a MS jurisdiction (m tonnes):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[CO₂ emissions from all voyages which departed from ports under a MS jurisdiction (m tonnes)]' derivation='Sum' name='[sum:CO₂ emissions from all voyages which departed from ports under a MS jurisdiction (m tonnes):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[CO₂ emissions which occurred within ports under a MS jurisdiction at berth (m tonnes)]' derivation='Sum' name='[sum:CO₂ emissions which occurred within ports under a MS jurisdiction at berth (m tonnes):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Distance travelled(n miles)]' derivation='Sum' name='[sum:Distance travelled(n miles):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Total CO₂ emissions (m tonnes)]' derivation='Sum' name='[sum:Total CO₂ emissions (m tonnes):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Total fuel consumption (m tonnes)]' derivation='Sum' name='[sum:Total fuel consumption (m tonnes):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Reporting Period]' derivation='Year' name='[yr:Reporting Period:ok]' pivot='key' type='ordinal' />
+      <group caption='Action (YEAR(Reporting Period))' hidden='true' name='[Action (YEAR(Reporting Period))]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[yr:Reporting Period:ok]' />
+        </groupfilter>
+      </group>
+      <drill-paths>
+        <drill-path name='Verifier Country, Verifier City'>
+          <field>[Verifier Country]</field>
+          <field>[Verifier City]</field>
+        </drill-path>
+      </drill-paths>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0vjrlz00vp56vs1ed2fu01q94gsf].[sum:CO₂ emissions from all voyages which departed from ports under a MS jurisdiction (m tonnes):qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.0vjrlz00vp56vs1ed2fu01q94gsf].[sum:CO₂ emissions from all voyages to ports under a MS jurisdiction (m tonnes):qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.0vjrlz00vp56vs1ed2fu01q94gsf].[sum:CO₂ emissions from all voyages between ports under a MS jurisdiction (m tonnes):qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0vjrlz00vp56vs1ed2fu01q94gsf].[sum:CO₂ emissions which occurred within ports under a MS jurisdiction at berth (m tonnes):qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United Kingdom&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='EUShipping.csv' id='EUShipping.csv_4AF4965D7F2B4B6ABACB7FE4CD6B0CFD'>
+            <properties context=''>
+              <relation connection='textscan.0l46kdl0n096qe18qzrxd1ifapdj' name='EUShipping.csv' table='[EUShipping#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
+                  <column datatype='integer' name='IMO Number' ordinal='0' />
+                  <column datatype='string' name='Name' ordinal='1' />
+                  <column datatype='string' name='Ship type' ordinal='2' />
+                  <column datatype='datetime' date-parse-format='yyyy' name='Reporting Period' ordinal='3' />
+                  <column datatype='string' name='Technical efficiency' ordinal='4' />
+                  <column datatype='string' name='Port of Registry' ordinal='5' />
+                  <column datatype='string' name='Home Port' ordinal='6' />
+                  <column datatype='string' name='Ice Class' ordinal='7' />
+                  <column datatype='date' name='DoC issue date' ordinal='8' />
+                  <column datatype='date' name='DoC expiry date' ordinal='9' />
+                  <column datatype='integer' name='Verifier Number' ordinal='10' />
+                  <column datatype='string' name='Verifier Name' ordinal='11' />
+                  <column datatype='string' name='Verifier NAB' ordinal='12' />
+                  <column datatype='string' name='Verifier Address' ordinal='13' />
+                  <column datatype='string' name='Verifier City' ordinal='14' />
+                  <column datatype='string' name='Verifier Accreditation number' ordinal='15' />
+                  <column datatype='string' name='Verifier Country' ordinal='16' />
+                  <column datatype='string' name='A' ordinal='17' />
+                  <column datatype='string' name='B' ordinal='18' />
+                  <column datatype='string' name='C' ordinal='19' />
+                  <column datatype='string' name='D' ordinal='20' />
+                  <column datatype='real' name='Total fuel consumption (m tonnes)' ordinal='21' />
+                  <column datatype='real' name='Fuel consumptions assigned to On laden (m tonnes)' ordinal='22' />
+                  <column datatype='real' name='Total CO₂ emissions (m tonnes)' ordinal='23' />
+                  <column datatype='real' name='CO₂ emissions from all voyages between ports under a MS jurisdiction (m tonnes)' ordinal='24' />
+                  <column datatype='real' name='CO₂ emissions from all voyages which departed from ports under a MS jurisdiction (m tonnes)' ordinal='25' />
+                  <column datatype='real' name='CO₂ emissions from all voyages to ports under a MS jurisdiction (m tonnes)' ordinal='26' />
+                  <column datatype='real' name='CO₂ emissions which occurred within ports under a MS jurisdiction at berth (m tonnes)' ordinal='27' />
+                  <column datatype='real' name='CO₂ emissions assigned to Passenger transport (m tonnes)' ordinal='28' />
+                  <column datatype='real' name='CO₂ emissions assigned to Freight transport (m tonnes)' ordinal='29' />
+                  <column datatype='real' name='CO₂ emissions assigned to On laden (m tonnes)' ordinal='30' />
+                  <column datatype='real' name='Annual Total time spent at sea (hours)' ordinal='31' />
+                  <column datatype='real' name='Annual average Fuel consumption per distance (kg / n mile)' ordinal='32' />
+                  <column datatype='string' name='Annual average Fuel consumption per transport work (mass) (g / m tonnes · n miles)' ordinal='33' />
+                  <column datatype='real' name='Annual average Fuel consumption per transport work (volume) (g / m³ · n miles)' ordinal='34' />
+                  <column datatype='real' name='Annual average Fuel consumption per transport work (dwt) (g / dwt carried · n miles)' ordinal='35' />
+                  <column datatype='real' name='Annual average Fuel consumption per transport work (pax) (g / pax · n miles)' ordinal='36' />
+                  <column datatype='real' name='Annual average Fuel consumption per transport work (freight) (g / m tonnes · n miles)' ordinal='37' />
+                  <column datatype='real' name='Annual average CO₂ emissions per distance (kg CO₂ / n mile)' ordinal='38' />
+                  <column datatype='string' name='Annual average CO₂ emissions per transport work (mass) (g CO₂ / m tonnes · n miles)' ordinal='39' />
+                  <column datatype='real' name='Annual average CO₂ emissions per transport work (volume) (g CO₂ / m³ · n miles)' ordinal='40' />
+                  <column datatype='real' name='Annual average CO₂ emissions per transport work (dwt) (g CO₂ / dwt carried · n miles)' ordinal='41' />
+                  <column datatype='real' name='Annual average CO₂ emissions per transport work (pax) (g CO₂ / pax · n miles)' ordinal='42' />
+                  <column datatype='real' name='Annual average CO₂ emissions per transport work (freight) (g CO₂ / m tonnes · n miles)' ordinal='43' />
+                  <column datatype='real' name='Through ice (n miles)' ordinal='44' />
+                  <column datatype='real' name='Total time spent at sea (hours)' ordinal='45' />
+                  <column datatype='real' name='Total time spent at sea through ice (hours)' ordinal='46' />
+                  <column datatype='string' name='Unnamed: 47' ordinal='47' />
+                  <column datatype='string' name='Fuel consumption per distance on laden voyages (kg / n mile)' ordinal='48' />
+                  <column datatype='real' name='Fuel consumption per transport work (mass) on laden voyages (g / m tonnes · n miles)' ordinal='49' />
+                  <column datatype='string' name='Fuel consumption per transport work (volume) on laden voyages (g / m³ · n miles)' ordinal='50' />
+                  <column datatype='real' name='Fuel consumption per transport work (dwt) on laden voyages (g / dwt carried · n miles)' ordinal='51' />
+                  <column datatype='real' name='Fuel consumption per transport work (pax) on laden voyages (g / pax · n miles)' ordinal='52' />
+                  <column datatype='string' name='Fuel consumption per transport work (freight) on laden voyages (g / m tonnes · n miles)' ordinal='53' />
+                  <column datatype='string' name='CO₂ emissions per distance on laden voyages (kg CO₂ / n mile)' ordinal='54' />
+                  <column datatype='real' name='CO₂ emissions per transport work (mass) on laden voyages (g CO₂ / m tonnes · n miles)' ordinal='55' />
+                  <column datatype='string' name='CO₂ emissions per transport work (volume) on laden voyages (g CO₂ / m³ · n miles)' ordinal='56' />
+                  <column datatype='real' name='CO₂ emissions per transport work (dwt) on laden voyages (g CO₂ / dwt carried · n miles)' ordinal='57' />
+                  <column datatype='real' name='CO₂ emissions per transport work (pax) on laden voyages (g CO₂ / pax · n miles)' ordinal='58' />
+                  <column datatype='string' name='CO₂ emissions per transport work (freight) on laden voyages (g CO₂ / m tonnes · n miles)' ordinal='59' />
+                  <column datatype='string' name='Additional information to facilitate the understanding of the reported average operational energy efficiency indicators' ordinal='60' />
+                  <column datatype='string' name='Average density of the cargo transported (m tonnes / m³)' ordinal='61' />
+                  <column datatype='string' name='MethodA' ordinal='62' />
+                  <column datatype='string' name='MethodB' ordinal='63' />
+                  <column datatype='string' name='MethodC' ordinal='64' />
+                  <column datatype='string' name='MethodD' ordinal='65' />
+                  <column datatype='string' name='Method' ordinal='66' />
+                  <column datatype='real' name='Technical efficiency (gCO₂/t·nm)' ordinal='67' />
+                  <column datatype='real' name='Distance travelled(n miles)' ordinal='68' />
+                  <column datatype='real' name='Average speed (n miles/hour)' ordinal='69' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <shared-views>
+    <shared-view name='federated.0vjrlz00vp56vs1ed2fu01q94gsf'>
+      <datasources>
+        <datasource caption='EUShipping' name='federated.0vjrlz00vp56vs1ed2fu01q94gsf' />
+      </datasources>
+      <datasource-dependencies datasource='federated.0vjrlz00vp56vs1ed2fu01q94gsf'>
+        <column datatype='datetime' name='[Reporting Period]' role='dimension' type='ordinal' />
+        <column datatype='string' name='[Ship type]' role='dimension' type='nominal' />
+        <column-instance column='[Ship type]' derivation='None' name='[none:Ship type:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Reporting Period]' derivation='Year' name='[yr:Reporting Period:ok]' pivot='key' type='ordinal' />
+      </datasource-dependencies>
+      <filter class='categorical' column='[federated.0vjrlz00vp56vs1ed2fu01q94gsf].[none:Ship type:nk]'>
+        <groupfilter function='member' level='[none:Ship type:nk]' member='&quot;Bulk carrier&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+      </filter>
+      <filter class='categorical' column='[federated.0vjrlz00vp56vs1ed2fu01q94gsf].[yr:Reporting Period:ok]'>
+        <groupfilter function='member' level='[yr:Reporting Period:ok]' member='2020' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+      </filter>
+    </shared-view>
+  </shared-views>
+  <actions>
+    <action caption='Filter 1 (generated)' name='[Action1_B29263CD2B6C48D5885051E2B23FB257]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Shipping Dashboard' type='sheet' worksheet='Carbon dioxide emissions by type of journey' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Shipping Dashboard' />
+      </command>
+    </action>
+    <action caption='Filter 2 (generated)' name='[Action2_688724B861264F6EB23FA90FE6822ECC]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Shipping Dashboard' type='sheet' worksheet='YOY mean technical efficiency' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Shipping Dashboard' />
+      </command>
+    </action>
+    <action caption='Filter 3 (generated)' name='[Action3_5AD74D2260E044CD83711CDE5874A6BD]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Shipping Dashboard' type='sheet' worksheet='YOY avg speed' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Shipping Dashboard' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Carbon dioxide emissions by type of journey'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontsize='12'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='EUShipping' name='federated.0vjrlz00vp56vs1ed2fu01q94gsf' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0vjrlz00vp56vs1ed2fu01q94gsf'>
+            <column datatype='real' name='[CO₂ emissions from all voyages between ports under a MS jurisdiction (m tonnes)]' role='measure' type='quantitative' />
+            <column datatype='real' name='[CO₂ emissions from all voyages to ports under a MS jurisdiction (m tonnes)]' role='measure' type='quantitative' />
+            <column datatype='real' name='[CO₂ emissions from all voyages which departed from ports under a MS jurisdiction (m tonnes)]' role='measure' type='quantitative' />
+            <column datatype='real' name='[CO₂ emissions which occurred within ports under a MS jurisdiction at berth (m tonnes)]' role='measure' type='quantitative' />
+            <column datatype='datetime' name='[Reporting Period]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Ship type]' role='dimension' type='nominal' />
+            <column-instance column='[Ship type]' derivation='None' name='[none:Ship type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[CO₂ emissions from all voyages between ports under a MS jurisdiction (m tonnes)]' derivation='Sum' name='[sum:CO₂ emissions from all voyages between ports under a MS jurisdiction (m tonnes):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[CO₂ emissions from all voyages to ports under a MS jurisdiction (m tonnes)]' derivation='Sum' name='[sum:CO₂ emissions from all voyages to ports under a MS jurisdiction (m tonnes):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[CO₂ emissions from all voyages which departed from ports under a MS jurisdiction (m tonnes)]' derivation='Sum' name='[sum:CO₂ emissions from all voyages which departed from ports under a MS jurisdiction (m tonnes):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[CO₂ emissions which occurred within ports under a MS jurisdiction at berth (m tonnes)]' derivation='Sum' name='[sum:CO₂ emissions which occurred within ports under a MS jurisdiction at berth (m tonnes):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Reporting Period]' derivation='Year' name='[yr:Reporting Period:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0vjrlz00vp56vs1ed2fu01q94gsf].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0vjrlz00vp56vs1ed2fu01q94gsf].[sum:CO₂ emissions from all voyages between ports under a MS jurisdiction (m tonnes):qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0vjrlz00vp56vs1ed2fu01q94gsf].[sum:CO₂ emissions from all voyages which departed from ports under a MS jurisdiction (m tonnes):qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0vjrlz00vp56vs1ed2fu01q94gsf].[sum:CO₂ emissions from all voyages to ports under a MS jurisdiction (m tonnes):qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0vjrlz00vp56vs1ed2fu01q94gsf].[sum:CO₂ emissions which occurred within ports under a MS jurisdiction at berth (m tonnes):qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0vjrlz00vp56vs1ed2fu01q94gsf].[yr:Reporting Period:ok]</column>
+            <column>[federated.0vjrlz00vp56vs1ed2fu01q94gsf].[:Measure Names]</column>
+            <column>[federated.0vjrlz00vp56vs1ed2fu01q94gsf].[none:Ship type:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0vjrlz00vp56vs1ed2fu01q94gsf].[Multiple Values]' scope='rows' value='CO₂ emissions (m tonnes)' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='display' field='[federated.0vjrlz00vp56vs1ed2fu01q94gsf].[:Measure Names]' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.0vjrlz00vp56vs1ed2fu01q94gsf].[:Measure Names]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0vjrlz00vp56vs1ed2fu01q94gsf].[Multiple Values]</rows>
+        <cols>[federated.0vjrlz00vp56vs1ed2fu01q94gsf].[:Measure Names]</cols>
+      </table>
+      <simple-id uuid='{630E4C7A-4E8A-45C2-A62E-A8394B516FA8}' />
+    </worksheet>
+    <worksheet name='Emissions by ship type'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontsize='12'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='EUShipping' name='federated.0vjrlz00vp56vs1ed2fu01q94gsf' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0vjrlz00vp56vs1ed2fu01q94gsf'>
+            <column datatype='datetime' name='[Reporting Period]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Ship type]' role='dimension' type='nominal' />
+            <column caption='Total CO₂ emissions (metric tonnes)' datatype='real' name='[Total CO₂ emissions (m tonnes)]' role='measure' type='quantitative' />
+            <column-instance column='[Ship type]' derivation='None' name='[none:Ship type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Total CO₂ emissions (m tonnes)]' derivation='Sum' name='[sum:Total CO₂ emissions (m tonnes):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Reporting Period]' derivation='Year' name='[yr:Reporting Period:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <computed-sort column='[federated.0vjrlz00vp56vs1ed2fu01q94gsf].[none:Ship type:nk]' direction='DESC' using='[federated.0vjrlz00vp56vs1ed2fu01q94gsf].[sum:Total CO₂ emissions (m tonnes):qk]' />
+          <slices>
+            <column>[federated.0vjrlz00vp56vs1ed2fu01q94gsf].[yr:Reporting Period:ok]</column>
+            <column>[federated.0vjrlz00vp56vs1ed2fu01q94gsf].[none:Ship type:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0vjrlz00vp56vs1ed2fu01q94gsf].[sum:Total CO₂ emissions (m tonnes):qk]' scope='cols' value='CO₂ emissions (m tonnes)' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.0vjrlz00vp56vs1ed2fu01q94gsf].[none:Ship type:nk]</rows>
+        <cols>[federated.0vjrlz00vp56vs1ed2fu01q94gsf].[sum:Total CO₂ emissions (m tonnes):qk]</cols>
+      </table>
+      <simple-id uuid='{F6F48A4D-7D6B-429F-84F7-13F4C93A6757}' />
+    </worksheet>
+    <worksheet name='Key numbers'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='EUShipping' name='federated.0vjrlz00vp56vs1ed2fu01q94gsf' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0vjrlz00vp56vs1ed2fu01q94gsf'>
+            <column datatype='real' name='[Distance travelled(n miles)]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Name]' role='dimension' type='nominal' />
+            <column datatype='datetime' name='[Reporting Period]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Ship type]' role='dimension' type='nominal' />
+            <column caption='Total CO₂ emissions (metric tonnes)' datatype='real' name='[Total CO₂ emissions (m tonnes)]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Total fuel consumption (m tonnes)]' role='measure' type='quantitative' />
+            <column-instance column='[Name]' derivation='CountD' name='[ctd:Name:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Ship type]' derivation='None' name='[none:Ship type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Distance travelled(n miles)]' derivation='Sum' name='[sum:Distance travelled(n miles):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Total CO₂ emissions (m tonnes)]' derivation='Sum' name='[sum:Total CO₂ emissions (m tonnes):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Total fuel consumption (m tonnes)]' derivation='Sum' name='[sum:Total fuel consumption (m tonnes):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Reporting Period]' derivation='Year' name='[yr:Reporting Period:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0vjrlz00vp56vs1ed2fu01q94gsf].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0vjrlz00vp56vs1ed2fu01q94gsf].[ctd:Name:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0vjrlz00vp56vs1ed2fu01q94gsf].[sum:Total CO₂ emissions (m tonnes):qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0vjrlz00vp56vs1ed2fu01q94gsf].[sum:Distance travelled(n miles):qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0vjrlz00vp56vs1ed2fu01q94gsf].[sum:Total fuel consumption (m tonnes):qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.0vjrlz00vp56vs1ed2fu01q94gsf].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.0vjrlz00vp56vs1ed2fu01q94gsf].[ctd:Name:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0vjrlz00vp56vs1ed2fu01q94gsf].[sum:Total CO₂ emissions (m tonnes):qk]&quot;</bucket>
+              <bucket>&quot;[federated.0vjrlz00vp56vs1ed2fu01q94gsf].[sum:Distance travelled(n miles):qk]&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.0vjrlz00vp56vs1ed2fu01q94gsf].[:Measure Names]</column>
+            <column>[federated.0vjrlz00vp56vs1ed2fu01q94gsf].[yr:Reporting Period:ok]</column>
+            <column>[federated.0vjrlz00vp56vs1ed2fu01q94gsf].[none:Ship type:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.0vjrlz00vp56vs1ed2fu01q94gsf].[:Measure Names]' value='244' />
+            <format attr='height' value='171' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='display' field='[federated.0vjrlz00vp56vs1ed2fu01q94gsf].[:Measure Names]' value='false' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#00aa00' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0vjrlz00vp56vs1ed2fu01q94gsf].[Multiple Values]' />
+              <text column='[federated.0vjrlz00vp56vs1ed2fu01q94gsf].[:Measure Names]' />
+              <lod column='[federated.0vjrlz00vp56vs1ed2fu01q94gsf].[ctd:Name:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontcolor='#ffffff' fontsize='14'><![CDATA[<[federated.0vjrlz00vp56vs1ed2fu01q94gsf].[Multiple Values]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#ffffff'><![CDATA[<[federated.0vjrlz00vp56vs1ed2fu01q94gsf].[:Measure Names]>]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+                <format attr='vertical-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols>[federated.0vjrlz00vp56vs1ed2fu01q94gsf].[:Measure Names]</cols>
+      </table>
+      <simple-id uuid='{CFC9C82F-B005-442A-AE5F-B43FE2629FA3}' />
+    </worksheet>
+    <worksheet name='Monitoring method'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontsize='12'>Monitoring method</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='EUShipping' name='federated.0vjrlz00vp56vs1ed2fu01q94gsf' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0vjrlz00vp56vs1ed2fu01q94gsf'>
+            <column datatype='string' name='[Method]' role='dimension' type='nominal' />
+            <column datatype='datetime' name='[Reporting Period]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Ship type]' role='dimension' type='nominal' />
+            <column-instance column='[Method]' derivation='Count' name='[cnt:Method:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Method]' derivation='None' name='[none:Method:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Ship type]' derivation='None' name='[none:Ship type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Reporting Period]' derivation='Year' name='[yr:Reporting Period:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0vjrlz00vp56vs1ed2fu01q94gsf].[none:Method:nk]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-manual-selection='true' user:ui-manual-selection-all-when-empty='true' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:Method:nk]' />
+              <groupfilter function='member' level='[none:Method:nk]' member='%null%' />
+            </groupfilter>
+          </filter>
+          <computed-sort column='[federated.0vjrlz00vp56vs1ed2fu01q94gsf].[none:Method:nk]' direction='DESC' using='[federated.0vjrlz00vp56vs1ed2fu01q94gsf].[cnt:Method:qk]' />
+          <slices>
+            <column>[federated.0vjrlz00vp56vs1ed2fu01q94gsf].[none:Ship type:nk]</column>
+            <column>[federated.0vjrlz00vp56vs1ed2fu01q94gsf].[yr:Reporting Period:ok]</column>
+            <column>[federated.0vjrlz00vp56vs1ed2fu01q94gsf].[none:Method:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.0vjrlz00vp56vs1ed2fu01q94gsf].[cnt:Method:qk]' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='field-labels-decoration'>
+            <format attr='font-style' value='normal' />
+            <format attr='font-weight' value='normal' />
+            <format attr='text-orientation' value='-90' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.0vjrlz00vp56vs1ed2fu01q94gsf].[none:Method:nk]</rows>
+        <cols>[federated.0vjrlz00vp56vs1ed2fu01q94gsf].[cnt:Method:qk]</cols>
+      </table>
+      <simple-id uuid='{D9C1CA9E-3280-4A39-9847-30AF5E5DE2A1}' />
+    </worksheet>
+    <worksheet name='YOY CO2 emissions'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontsize='12'>YOY CO</run>
+            <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='12'>₂</run>
+            <run fontsize='12'> emissions</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='EUShipping' name='federated.0vjrlz00vp56vs1ed2fu01q94gsf' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0vjrlz00vp56vs1ed2fu01q94gsf'>
+            <column datatype='datetime' name='[Reporting Period]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Ship type]' role='dimension' type='nominal' />
+            <column caption='Total CO₂ emissions (metric tonnes)' datatype='real' name='[Total CO₂ emissions (m tonnes)]' role='measure' type='quantitative' />
+            <column-instance column='[Ship type]' derivation='None' name='[none:Ship type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Total CO₂ emissions (m tonnes)]' derivation='Sum' name='[sum:Total CO₂ emissions (m tonnes):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Reporting Period]' derivation='Year-Trunc' name='[tyr:Reporting Period:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Reporting Period]' derivation='Year' name='[yr:Reporting Period:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.0vjrlz00vp56vs1ed2fu01q94gsf].[yr:Reporting Period:ok]</column>
+            <column>[federated.0vjrlz00vp56vs1ed2fu01q94gsf].[none:Ship type:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0vjrlz00vp56vs1ed2fu01q94gsf].[sum:Total CO₂ emissions (m tonnes):qk]' scope='rows' value='CO₂ emissions (m tonnes)' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.0vjrlz00vp56vs1ed2fu01q94gsf].[sum:Total CO₂ emissions (m tonnes):qk]</rows>
+        <cols>[federated.0vjrlz00vp56vs1ed2fu01q94gsf].[tyr:Reporting Period:qk]</cols>
+      </table>
+      <simple-id uuid='{831BABA7-7D7D-4050-BEDD-C5845EA3C774}' />
+    </worksheet>
+    <worksheet name='YOY avg speed'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontsize='12'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='EUShipping' name='federated.0vjrlz00vp56vs1ed2fu01q94gsf' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0vjrlz00vp56vs1ed2fu01q94gsf'>
+            <column datatype='real' name='[Average speed (n miles/hour)]' role='measure' type='quantitative' />
+            <column datatype='datetime' name='[Reporting Period]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Ship type]' role='dimension' type='nominal' />
+            <column-instance column='[Average speed (n miles/hour)]' derivation='Avg' name='[avg:Average speed (n miles/hour):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Ship type]' derivation='None' name='[none:Ship type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Reporting Period]' derivation='Year' name='[yr:Reporting Period:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.0vjrlz00vp56vs1ed2fu01q94gsf].[none:Ship type:nk]</column>
+            <column>[federated.0vjrlz00vp56vs1ed2fu01q94gsf].[yr:Reporting Period:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0vjrlz00vp56vs1ed2fu01q94gsf].[avg:Average speed (n miles/hour):qk]' scope='rows' value='Avg. speed (n miles/hour)' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.0vjrlz00vp56vs1ed2fu01q94gsf].[avg:Average speed (n miles/hour):qk]</rows>
+        <cols>[federated.0vjrlz00vp56vs1ed2fu01q94gsf].[yr:Reporting Period:ok]</cols>
+      </table>
+      <simple-id uuid='{9BD7EE34-A719-4C2E-8FBC-1CA23FCADEE9}' />
+    </worksheet>
+    <worksheet name='YOY mean technical efficiency'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontsize='12'>YOY EEDI changes</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='EUShipping' name='federated.0vjrlz00vp56vs1ed2fu01q94gsf' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0vjrlz00vp56vs1ed2fu01q94gsf'>
+            <column datatype='datetime' name='[Reporting Period]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Ship type]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Technical efficiency (gCO₂/t·nm)]' role='measure' type='quantitative' />
+            <column-instance column='[Technical efficiency (gCO₂/t·nm)]' derivation='Avg' name='[avg:Technical efficiency (gCO₂/t·nm):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Ship type]' derivation='None' name='[none:Ship type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Reporting Period]' derivation='Year' name='[yr:Reporting Period:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.0vjrlz00vp56vs1ed2fu01q94gsf].[none:Ship type:nk]</column>
+            <column>[federated.0vjrlz00vp56vs1ed2fu01q94gsf].[yr:Reporting Period:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0vjrlz00vp56vs1ed2fu01q94gsf].[avg:Technical efficiency (gCO₂/t·nm):qk]' scope='rows' value='Avg. EEDI (gCO₂/t·nm)' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.0vjrlz00vp56vs1ed2fu01q94gsf].[avg:Technical efficiency (gCO₂/t·nm):qk]</rows>
+        <cols>[federated.0vjrlz00vp56vs1ed2fu01q94gsf].[yr:Reporting Period:ok]</cols>
+      </table>
+      <simple-id uuid='{C3BD7790-38BB-4F80-B8CD-EFC9C387DC9F}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='Shipping Dashboard'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <datasources>
+        <datasource caption='EUShipping' name='federated.0vjrlz00vp56vs1ed2fu01q94gsf' />
+      </datasources>
+      <datasource-dependencies datasource='federated.0vjrlz00vp56vs1ed2fu01q94gsf'>
+        <column datatype='datetime' name='[Reporting Period]' role='dimension' type='ordinal' />
+        <column datatype='string' name='[Ship type]' role='dimension' type='nominal' />
+        <column-instance column='[Ship type]' derivation='None' name='[none:Ship type:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Reporting Period]' derivation='Year' name='[yr:Reporting Period:ok]' pivot='key' type='ordinal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='21625' id='3' name='Key numbers' show-title='false' w='98500' x='100' y='8000' />
+        <zone h='9375' id='4' mode='dropdown' name='Key numbers' param='[federated.0vjrlz00vp56vs1ed2fu01q94gsf].[yr:Reporting Period:ok]' type-v2='filter' values='database' w='22200' x='500' y='1375' />
+        <zone h='36875' id='5' name='YOY CO2 emissions' show-title='false' w='34300' x='300' y='31000' />
+        <zone h='31625' id='10' name='Carbon dioxide emissions by type of journey' show-title='false' w='37900' x='1600' y='69750' />
+        <zone h='17375' id='11' name='Carbon dioxide emissions by type of journey' pane-specification-id='0' param='[federated.0vjrlz00vp56vs1ed2fu01q94gsf].[:Measure Names]' show-title='false' type-v2='color' w='24500' x='32700' y='75125' />
+        <zone h='6625' id='13' mode='dropdown' name='Carbon dioxide emissions by type of journey' param='[federated.0vjrlz00vp56vs1ed2fu01q94gsf].[none:Ship type:nk]' type-v2='filter' w='16000' x='23900' y='1125' />
+        <zone h='35125' id='14' name='YOY mean technical efficiency' show-title='false' w='32900' x='67100' y='31125' />
+        <zone h='36000' id='15' name='YOY avg speed' show-title='false' w='32200' x='35700' y='31500' />
+        <zone h='33250' id='16' name='Monitoring method' w='43100' x='57600' y='70500' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1800' minheight='1800' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='20' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='19' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+                <zone h='9375' id='4' mode='dropdown' name='Key numbers' param='[federated.0vjrlz00vp56vs1ed2fu01q94gsf].[yr:Reporting Period:ok]' type-v2='filter' values='database' w='22200' x='500' y='1375'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='173' h='21625' id='3' is-fixed='true' name='Key numbers' show-title='false' w='98500' x='100' y='8000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='36875' id='5' is-fixed='true' name='YOY CO2 emissions' show-title='false' w='34300' x='300' y='31000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='35125' id='14' is-fixed='true' name='YOY mean technical efficiency' show-title='false' w='32900' x='67100' y='31125'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='36000' id='15' is-fixed='true' name='YOY avg speed' show-title='false' w='32200' x='35700' y='31500'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='6625' id='13' mode='dropdown' name='Carbon dioxide emissions by type of journey' param='[federated.0vjrlz00vp56vs1ed2fu01q94gsf].[none:Ship type:nk]' type-v2='filter' w='16000' x='23900' y='1125'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='253' h='31625' id='10' is-fixed='true' name='Carbon dioxide emissions by type of journey' show-title='false' w='37900' x='1600' y='69750'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='17375' id='11' name='Carbon dioxide emissions by type of journey' pane-specification-id='0' param='[federated.0vjrlz00vp56vs1ed2fu01q94gsf].[:Measure Names]' show-title='false' type-v2='color' w='24500' x='32700' y='75125'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='266' h='33250' id='16' is-fixed='true' name='Monitoring method' w='43100' x='57600' y='70500'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{75E674E7-BCE3-43DD-B709-B8B226013295}' />
+    </dashboard>
+  </dashboards>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='dashboard' maximized='true' name='Shipping Dashboard'>
+      <viewpoints>
+        <viewpoint name='Carbon dioxide emissions by type of journey'>
+          <zoom type='entire-view' />
+          <highlight>
+            <color-one-way>
+              <field>[federated.0vjrlz00vp56vs1ed2fu01q94gsf].[:Measure Names]</field>
+            </color-one-way>
+          </highlight>
+        </viewpoint>
+        <viewpoint name='Key numbers' />
+        <viewpoint name='Monitoring method' />
+        <viewpoint name='YOY CO2 emissions'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='YOY avg speed'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='YOY mean technical efficiency'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{CB9B6515-4147-4C1E-B881-F58A071371CA}' />
+    </window>
+    <window class='worksheet' name='Emissions by ship type'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='dropdown' param='[federated.0vjrlz00vp56vs1ed2fu01q94gsf].[none:Ship type:nk]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0vjrlz00vp56vs1ed2fu01q94gsf].[none:Ship type:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{0FB37046-1BAB-45F8-B086-060988FECF06}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Carbon dioxide emissions by type of journey'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0vjrlz00vp56vs1ed2fu01q94gsf].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <selection-collection>
+          <node-selection select-tuples='false'>
+            <oriented-node-reference orientation='vertical'>
+              <node-reference>
+                <axis>[federated.0vjrlz00vp56vs1ed2fu01q94gsf].[Multiple Values]</axis>
+              </node-reference>
+              <page-reference />
+            </oriented-node-reference>
+          </node-selection>
+        </selection-collection>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0vjrlz00vp56vs1ed2fu01q94gsf].[:Measure Names]</field>
+            <field>[federated.0vjrlz00vp56vs1ed2fu01q94gsf].[yr:Reporting Period:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{FD7AEC0A-B84D-45CD-BF2E-C01F45841E38}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Key numbers'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.0vjrlz00vp56vs1ed2fu01q94gsf].[:Measure Names]</field>
+            <field>[federated.0vjrlz00vp56vs1ed2fu01q94gsf].[none:Name:nk]</field>
+            <field>[federated.0vjrlz00vp56vs1ed2fu01q94gsf].[tyr:Reporting Period:qk]</field>
+            <field>[federated.0vjrlz00vp56vs1ed2fu01q94gsf].[yr:Reporting Period:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{72071BE3-BAAB-456C-BD81-62A2DA0B9BA1}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Monitoring method'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0vjrlz00vp56vs1ed2fu01q94gsf].[cnt:Method:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{899A8EBC-E88F-4FB6-AE46-D7F730C348AE}' />
+    </window>
+    <window class='worksheet' hidden='true' name='YOY CO2 emissions'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0vjrlz00vp56vs1ed2fu01q94gsf].[tyr:Reporting Period:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{3ECE5E5F-2AF6-4881-9718-F6C006CEBC40}' />
+    </window>
+    <window class='worksheet' hidden='true' name='YOY avg speed'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0vjrlz00vp56vs1ed2fu01q94gsf].[yr:Reporting Period:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{F020F072-A4FC-485A-8E09-A91A870A136B}' />
+    </window>
+    <window class='worksheet' hidden='true' name='YOY mean technical efficiency'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <selection-collection>
+          <node-selection select-tuples='false'>
+            <oriented-node-reference orientation='vertical'>
+              <node-reference>
+                <axis>[federated.0vjrlz00vp56vs1ed2fu01q94gsf].[avg:Technical efficiency (gCO₂/t·nm):qk]</axis>
+              </node-reference>
+              <page-reference />
+            </oriented-node-reference>
+          </node-selection>
+        </selection-collection>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0vjrlz00vp56vs1ed2fu01q94gsf].[yr:Reporting Period:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{9A8EFED1-664E-4984-BC4F-B680F4B68908}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='107' name='Emissions by ship type' width='192'>
+      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
+      tSeMaX5s8hcAAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='Shipping Dashboard' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
